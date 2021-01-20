@@ -21,3 +21,59 @@
     background-color: #4caf50;
     color: white;
 }
+
+div.img_disp{
+
+    margin: 5px;
+    border: 1px solid #cccccc;
+    float: left;
+    width: 180px;
+}
+
+div.img_disp img{
+    width: 100%;
+    height: auto;
+}
+
+div.img_disp:hover {
+    border: 1px solid #777;
+}
+
+.vid_disp{
+    padding-left: 33%;
+}
+
+#tentry{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+}
+
+#tentry td, #tentry th {
+    border: 1px solid #9c9595;
+    padding: 6px;
+}
+#tentry tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#tentry tr:hover {
+    background-color: #ddd;
+}
+
+#tentry th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+.rad-choices input[type="radio"] {
+    cursor: pointer;
+}
+  
+.rad-choices label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
