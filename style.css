@@ -39,18 +39,20 @@ div.img_disp:hover {
     border: 1px solid #777;
 }
 
-.vid_disp{
+div.vid_disp{
+    margin: 5px;
+    float: left;
     padding-left: 33%;
 }
 
 #tentry{
     border-collapse: collapse;
     width: 100%;
-    font-size: 30px;
     text-align: left;
 }
 
 #tentry td, #tentry th {
+    
     border: 1px solid #9c9595;
     padding: 6px;
 }
