@@ -22,28 +22,26 @@
     color: white;
 }
 
-div.img_disp{
 
-    margin: 5px;
-    border: 1px solid #cccccc;
-    float: left;
-    width: 180px;
+.rad-choices input[type="radio"] {
+    cursor: pointer;
+}
+  
+.rad-choices label {
+    font-size: 16px;
+    cursor: pointer;
 }
 
-div.img_disp img{
-    width: 100%;
-    height: auto;
-}
 
-div.img_disp:hover {
-    border: 1px solid #777;
-}
+
+
 
 div.vid_disp{
     margin: 5px;
     float: left;
-    padding-left: 33%;
 }
+
+
 
 #tentry{
     border-collapse: collapse;
@@ -70,12 +68,21 @@ div.vid_disp{
     text-align: left;
 }
 
-.rad-choices input[type="radio"] {
-    cursor: pointer;
-}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
   
-.rad-choices label {
-    font-size: 16px;
-    cursor: pointer;
+div.img_disp{
+padding: 10px;
+    margin: 5px;
+    float: center;
+    width: 180px;
 }
 
+div.img_disp img{
+    width: 100%;
+    height: auto;
+}
