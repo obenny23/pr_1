@@ -18,9 +18,14 @@
 }
 
 .navbar a.active {
-    background-color: #4caf50;
-    color: white;
+    background-color: rgb(154, 193, 235);
+    color: black;
 }
+
+.navbar a.sign {
+    float: right;
+}
+
 
 
 .rad-choices input[type="radio"] {
@@ -31,16 +36,6 @@
     font-size: 16px;
     cursor: pointer;
 }
-
-
-
-
-
-div.vid_disp{
-    margin: 5px;
-    float: left;
-}
-
 
 
 #tentry{
@@ -75,14 +70,56 @@ div.vid_disp{
     justify-content: space-between;
   }
   
+
 div.img_disp{
-padding: 10px;
-    margin: 5px;
+    padding: 15px;
     float: center;
-    width: 180px;
+    width: 220px;
 }
 
 div.img_disp img{
     width: 100%;
     height: auto;
+}
+
+
+
+div.vid_disp{
+    margin: 15px;
+    float: center;
+    width: 280px;
+}
+
+div.vid_disp iframe{
+    width: 100%;
+    height: auto;
+}
+
+
+
+#scrollbtn {
+    background-color: rgb(54, 95, 138);
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 22px;
+    border-radius: 90px;
+    font-size: 14px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+#scrollbtn:hover {
+    background-color: #555555;
+}
+
+p.ver {
+    padding-left: 15px;
+    font-size: 8 px;
 }
