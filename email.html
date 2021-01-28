@@ -8,17 +8,15 @@
     </head>
 
     <body>
-        <button onclick="scrollUp()" id="scrollbtn" title="Go to top">Back<br/>To Top</button>
-
         <div class="navbar">
             <a href="index.html"> Text</a>
             <a href="image.html"> Image</a>
             <a href="video.html"> Video</a>
             <a href="table.html"> Table</a>
-            <a class="sign && active" href="email.html">Sign In</a>
+            <a class="login && active" href="email.html">Log In</a>
         </div>
 
-        <h2>Sign up with email</h2>
+        <h2>Log in with email</h2>
         <hr>
         <form>
             <label for="fname">First Name:</label><br>
@@ -28,7 +26,7 @@
             <br>
             <label for="email">Email: </label> <input type="text" id="email" name="email"><br> 
             <p class="ver" id="verify"></p>
-            <input type="button" onclick="verifyEmail()" value="Done"> <br>
+            <input id="loginbtn" type="button" onclick="verifyEmail()" value="Log In"> <br>
 
         </form>
 

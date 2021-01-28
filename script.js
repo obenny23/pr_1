@@ -1,37 +1,17 @@
-/*document.addEventListener("DOMContentLoaded",
-    function(event) {
-
-        function openImg (event){
-            this.textContent=""
-            var name = document.getElementById("name").value;
-            document.getElementById("")
-
-        }
-
-
-        document.querySelector("button")
-        .addEventListener("click", verifyEmail);
-
-        document.querySelector("img")
-        .addEventListener("click", openImg);
-
-        document.
-    };
-
-} */
-
-//Get the button:
+// Scroll Up button function
 mybutton = document.getElementById("scrollbtn");
 window.onscroll = function() {scrollFunction()};
 
 var wheight = window.innerHeight * .25
 
 function scrollFunction() {
-  if (document.body.scrollTop > wheight || document.documentElement.scrollTop > wheight) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+   if (document.body.scrollTop > wheight || document.documentElement.scrollTop > wheight) {
+        if (document.getElementById("myModal-img").style.display != "block"){
+            mybutton.style.display = "block";
+        }
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 
 
@@ -39,6 +19,8 @@ function scrollUp() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0;
 }
+
+//Email Verification function
 
 function verifyEmail(event){
     var corr_tag = false
@@ -68,3 +50,46 @@ function verifyEmail(event){
     }
 
 }
+
+//function for overlay
+
+function OpenImg(index){
+
+    var id = "dImg"+ index;
+    var modal = document.getElementById("myModal-img");
+    var modalImg = document.getElementById("img01");
+    var img = document.getElementById(id)
+        
+    modal.style.display = "block";
+    modalImg.src = img.src;
+
+    window.onclick = function(event) { 
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
+
+function iframeclick(index) {
+    var id = "vid"+ index;
+    document.getElementById(id).contentWindow.document.body.onclick = OpenVid(index);
+}
+
+
+function OpenVid(index){
+    var id = "vid" + index;
+    var modal = document.getElementById("myModal-vid");
+    var modalVid = document.getElementById("vid01");
+    var vid = document.getElementById(id)
+
+    modal.style.display = "block";
+    modalVid.src = vid.src;
+
+    window.onclick = function(event) { 
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
